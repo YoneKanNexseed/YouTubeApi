@@ -1,4 +1,4 @@
-const YOUR_API_KEY = 'XXXXX';
+const API_KEY = 'YOUR_API_KEY';
 const cardTemplate = $('#card-template').html();
 
 const Card = ({ videoId, src, title, description }) => `
@@ -24,7 +24,7 @@ $('#search-btn').on('click', () => {
     data: {
       part: 'snippet',
       q: searchWord,
-      key: YOUR_API_KEY,
+      key: API_KEY,
       maxResults: 50,
       type: 'video'
     }
