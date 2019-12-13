@@ -7,8 +7,8 @@ const Card = ({ videoId, src, title, description }) => `
       <div class="card">
         <img src="${src}" class="card-img-top">
         <div class="card-body">
-          <h5 id="title" class="card-title">${title}</h5>
-          <p id="description" class="card-text">${description}</p>
+          <h5 class="card-title">${title}</h5>
+          <p class="card-text">${description}</p>
         </div>
       </div>
     </a>
