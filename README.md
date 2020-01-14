@@ -25,7 +25,7 @@
 
 3. YouTube APIを有効化する
 
-<img src="./images/4.png" style="width: 500px">
+<img src="./images/4.png" style="width: 200px">
 
 <img src="./images/5.png" style="width: 500px">
 
