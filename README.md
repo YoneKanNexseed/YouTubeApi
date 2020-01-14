@@ -64,180 +64,180 @@
 
   2. 検索結果のテンプレートの作成
 
-    ```HTML
+      ```HTML
 
-    <div class="row result">
+      <div class="row result">
 
-      <!-- start -->
-      <div class="col-sm-6">
-        <a href="https://www.youtube.com/watch?v=Dx_fKPBPYUI" target="_blank">
-          <div class="card">
-            <img src="https://i.ytimg.com/vi/Dx_fKPBPYUI/hqdefault.jpg" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">米津玄師 MV「LOSER」</h5>
-              <p class="card-text">Honda「JADE」CM 5th Single「LOSER / ナンバーナイン」</p>
+        <!-- start -->
+        <div class="col-sm-6">
+          <a href="https://www.youtube.com/watch?v=Dx_fKPBPYUI" target="_blank">
+            <div class="card">
+              <img src="https://i.ytimg.com/vi/Dx_fKPBPYUI/hqdefault.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">米津玄師 MV「LOSER」</h5>
+                <p class="card-text">Honda「JADE」CM 5th Single「LOSER / ナンバーナイン」</p>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
+        </div>
+
+        <div class="col-sm-6">
+          <a href="https://www.youtube.com/watch?v=Dx_fKPBPYUI" target="_blank">
+            <div class="card">
+              <img src="https://i.ytimg.com/vi/Dx_fKPBPYUI/hqdefault.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">米津玄師 MV「LOSER」</h5>
+                <p class="card-text">Honda「JADE」CM 5th Single「LOSER / ナンバーナイン」</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-6">
+          <a href="https://www.youtube.com/watch?v=Dx_fKPBPYUI" target="_blank">
+            <div class="card">
+              <img src="https://i.ytimg.com/vi/Dx_fKPBPYUI/hqdefault.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">米津玄師 MV「LOSER」</h5>
+                <p class="card-text">Honda「JADE」CM 5th Single「LOSER / ナンバーナイン」</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- end -->
       </div>
 
-      <div class="col-sm-6">
-        <a href="https://www.youtube.com/watch?v=Dx_fKPBPYUI" target="_blank">
-          <div class="card">
-            <img src="https://i.ytimg.com/vi/Dx_fKPBPYUI/hqdefault.jpg" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">米津玄師 MV「LOSER」</h5>
-              <p class="card-text">Honda「JADE」CM 5th Single「LOSER / ナンバーナイン」</p>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-sm-6">
-        <a href="https://www.youtube.com/watch?v=Dx_fKPBPYUI" target="_blank">
-          <div class="card">
-            <img src="https://i.ytimg.com/vi/Dx_fKPBPYUI/hqdefault.jpg" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">米津玄師 MV「LOSER」</h5>
-              <p class="card-text">Honda「JADE」CM 5th Single「LOSER / ナンバーナイン」</p>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <!-- end -->
-    </div>
-
-    ```
+      ```
 
   3. app.jsに検索結果のテンプレートを作成
 
-    ```JavaScript
-    const Card = () => `
-      <div class="col-sm-6">
-        <a href="https://www.youtube.com/watch?v=Dx_fKPBPYUI" target="_blank">
-          <div class="card">
-            <img src="https://i.ytimg.com/vi/Dx_fKPBPYUI/hqdefault.jpg" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">米津玄師 MV「LOSER」</h5>
-              <p class="card-text">Honda「JADE」CM 5th Single「LOSER / ナンバーナイン」</p>
+      ```JavaScript
+      const Card = () => `
+        <div class="col-sm-6">
+          <a href="https://www.youtube.com/watch?v=Dx_fKPBPYUI" target="_blank">
+            <div class="card">
+              <img src="https://i.ytimg.com/vi/Dx_fKPBPYUI/hqdefault.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">米津玄師 MV「LOSER」</h5>
+                <p class="card-text">Honda「JADE」CM 5th Single「LOSER / ナンバーナイン」</p>
+              </div>
             </div>
-          </div>
-        </a>
-      </div>
-    `;
-    ```
+          </a>
+        </div>
+      `;
+      ```
 
   4. 検索ボタンクリック時に、10件の結果を表示する
 
-    ```JavaScript
-    $('#search-btn').on('click', () => {
-      $('.result').append(Card());
-    });
-    ```
+      ```JavaScript
+      $('#search-btn').on('click', () => {
+        $('.result').append(Card());
+      });
+      ```
 
   5. API KEYの定数を作成する
 
     <img src="./images/10.png" style="width: 200px">
 
-    ```JavaScript
-    const API_KEY = 'XXX';
+      ```JavaScript
+      const API_KEY = 'XXX';
 
-    const Card = () => `
-      <div class="col-sm-6">
-        <a href="https://www.youtube.com/watch?v=Dx_fKPBPYUI" target="_blank">
-          <div class="card">
-            <img src="https://i.ytimg.com/vi/Dx_fKPBPYUI/hqdefault.jpg" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">米津玄師 MV「LOSER」</h5>
-              <p class="card-text">Honda「JADE」CM 5th Single「LOSER / ナンバーナイン」</p>
+      const Card = () => `
+        <div class="col-sm-6">
+          <a href="https://www.youtube.com/watch?v=Dx_fKPBPYUI" target="_blank">
+            <div class="card">
+              <img src="https://i.ytimg.com/vi/Dx_fKPBPYUI/hqdefault.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">米津玄師 MV「LOSER」</h5>
+                <p class="card-text">Honda「JADE」CM 5th Single「LOSER / ナンバーナイン」</p>
+              </div>
             </div>
-          </div>
-        </a>
-      </div>
-    `;
+          </a>
+        </div>
+      `;
 
-    $('#search-btn').on('click', () => {
-      $('.result').append(Card());
-    });
-    ```
+      $('#search-btn').on('click', () => {
+        $('.result').append(Card());
+      });
+      ```
 
   6. 検索ボタンクリック時に、AjaxでYouTube Data APIを実行する
 
     [ドキュメント](https://developers.google.com/youtube/v3/docs/search/list)
 
-    ```JavaScript
-    $('#search-btn').on('click', () => {
-      const searchWord = $('#search-word').val();
+      ```JavaScript
+      $('#search-btn').on('click', () => {
+        const searchWord = $('#search-word').val();
 
-      $.ajax({
-        url: 'https://www.googleapis.com/youtube/v3/search',
-        type: 'GET',
-        data: {
-          part: 'snippet',
-          q: searchWord,
-          key: API_KEY,
-          maxResults: 50,
-          type: 'video'
-        }
-      }).done(response => {
-        console.log(response);
-      }).fail(error => {
-        console.log(error);
-      })
-    });
-    ```
+        $.ajax({
+          url: 'https://www.googleapis.com/youtube/v3/search',
+          type: 'GET',
+          data: {
+            part: 'snippet',
+            q: searchWord,
+            key: API_KEY,
+            maxResults: 50,
+            type: 'video'
+          }
+        }).done(response => {
+          console.log(response);
+        }).fail(error => {
+          console.log(error);
+        })
+      });
+      ```
 
   7. 完成形
 
-    ```JavaScript
-    const API_KEY = 'XXX';
+      ```JavaScript
+      const API_KEY = 'XXX';
 
-    const Card = ({ videoId, src, title, description }) => `
-      <div class="col-sm-6">
-        <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank">
-          <div class="card">
-            <img src="${src}" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">${title}</h5>
-              <p class="card-text">${description}</p>
+      const Card = ({ videoId, src, title, description }) => `
+        <div class="col-sm-6">
+          <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank">
+            <div class="card">
+              <img src="${src}" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">${title}</h5>
+                <p class="card-text">${description}</p>
+              </div>
             </div>
-          </div>
-        </a>
-      </div>
-    `;
+          </a>
+        </div>
+      `;
 
-    $('#search-btn').on('click', () => {
-      const searchWord = $('#search-word').val();
+      $('#search-btn').on('click', () => {
+        const searchWord = $('#search-word').val();
 
-      $.ajax({
-        url: 'https://www.googleapis.com/youtube/v3/search',
-        type: 'GET',
-        data: {
-          part: 'snippet',
-          q: searchWord,
-          key: API_KEY,
-          maxResults: 50,
-          type: 'video'
-        }
-      }).done(response => {
-        $('.result').empty();
+        $.ajax({
+          url: 'https://www.googleapis.com/youtube/v3/search',
+          type: 'GET',
+          data: {
+            part: 'snippet',
+            q: searchWord,
+            key: API_KEY,
+            maxResults: 50,
+            type: 'video'
+          }
+        }).done(response => {
+          $('.result').empty();
 
-        response.items.forEach(video => {
+          response.items.forEach(video => {
 
-          const videoId = video.id.videoId;
-          const thumbnail = video.snippet.thumbnails.high.url;
-          const title = video.snippet.title;
-          const description = video.snippet.description;
+            const videoId = video.id.videoId;
+            const thumbnail = video.snippet.thumbnails.high.url;
+            const title = video.snippet.title;
+            const description = video.snippet.description;
 
-          $('.result').append(Card({ videoId: videoId, src: thumbnail, title: title, description: description }));
-        });
+            $('.result').append(Card({ videoId: videoId, src: thumbnail, title: title, description: description }));
+          });
 
-      }).fail(error => {
-        console.log(error);
-      })
+        }).fail(error => {
+          console.log(error);
+        })
 
-    });
+      });
 
 
-    ```
+      ```
