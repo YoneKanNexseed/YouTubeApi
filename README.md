@@ -43,7 +43,7 @@
 ### 画面の作成
   1. index.htmlに以下のコードを書く。このプロジェクトでは、jQueryとBootStrapを使用する
 
-    ```HTML
+      ```HTML
       <!DOCTYPE html>
       <html lang="ja">
       <head>
@@ -60,7 +60,7 @@
 
       </body>
       </html>
-    ```
+      ```
 
   2. 検索結果のテンプレートの作成
 
