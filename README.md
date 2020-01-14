@@ -12,13 +12,13 @@
 2. プロジェクトを作成する
 
     - Step 1
-    <img src="./images/1.png" width="320px">
+    <img src="./images/1.png">  
 
     - Step 2
-    <img src="./images/2.png" width="320px">
+    <img src="./images/2.png">  
 
     - Step 3
-    <img src="./images/3.png" width="320px">
+    <img src="./images/3.png">  
 
 3. YouTube APIを有効化する
 
