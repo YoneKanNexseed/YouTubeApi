@@ -62,7 +62,7 @@
 </html>
 ```
 
-2. 検索検索のテンプレートの作成
+2. 検索結果のテンプレートの作成
 
 ```HTML
 
@@ -110,4 +110,54 @@
 
 ```
 
-3. 
+3. app.jsに検索結果のテンプレートを作成
+
+```JavaScript
+const Card = () => `
+  <div class="col-sm-6">
+    <a href="https://www.youtube.com/watch?v=Dx_fKPBPYUI" target="_blank">
+      <div class="card">
+        <img src="https://i.ytimg.com/vi/Dx_fKPBPYUI/hqdefault.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">米津玄師 MV「LOSER」</h5>
+          <p class="card-text">Honda「JADE」CM 5th Single「LOSER / ナンバーナイン」</p>
+        </div>
+      </div>
+    </a>
+  </div>
+`;
+```
+
+4. 検索ボタンクリック時に、10件の結果を表示する
+
+```JavaScript
+$('#search-btn').on('click', () => {
+  $('.result').append(Card());
+});
+```
+
+5. API KEYの定数を作成する
+
+<img src="./images/10.png" style="width: 200px">
+
+```JavaScript
+const API_KEY = 'XXX';
+
+const Card = () => `
+  <div class="col-sm-6">
+    <a href="https://www.youtube.com/watch?v=Dx_fKPBPYUI" target="_blank">
+      <div class="card">
+        <img src="https://i.ytimg.com/vi/Dx_fKPBPYUI/hqdefault.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">米津玄師 MV「LOSER」</h5>
+          <p class="card-text">Honda「JADE」CM 5th Single「LOSER / ナンバーナイン」</p>
+        </div>
+      </div>
+    </a>
+  </div>
+`;
+
+$('#search-btn').on('click', () => {
+  $('.result').append(Card());
+});
+```
