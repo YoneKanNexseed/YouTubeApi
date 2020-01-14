@@ -1,5 +1,4 @@
-const API_KEY = 'YOUR_API_KEY';
-const cardTemplate = $('#card-template').html();
+const API_KEY = 'YOUT_API_KEY';
 
 const Card = ({ videoId, src, title, description }) => `
   <div class="col-sm-6">
