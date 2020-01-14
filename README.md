@@ -138,7 +138,7 @@
 
   5. API KEYの定数を作成する
 
-    <img src="./images/10.png" style="width: 200px">
+      <img src="./images/10.png" style="width: 200px">
 
       ```JavaScript
       const API_KEY = 'XXX';
@@ -164,7 +164,7 @@
 
   6. 検索ボタンクリック時に、AjaxでYouTube Data APIを実行する
 
-    [ドキュメント](https://developers.google.com/youtube/v3/docs/search/list)
+      [ドキュメント](https://developers.google.com/youtube/v3/docs/search/list)
 
       ```JavaScript
       $('#search-btn').on('click', () => {
