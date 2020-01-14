@@ -12,27 +12,33 @@
 2. プロジェクトを作成する
 
     - Step 1
-    <img src="./images/1.png">  
+    <img src="./images/1.png">
 
     - Step 2
-    <img src="./images/2.png">  
+    <img src="./images/2.png">
 
     - Step 3
-    <img src="./images/3.png">  
+    <img src="./images/3.png">
 
 3. YouTube APIを有効化する
 
-<img src="./images/4.png" style="width: 200px">
+    - Step1
+    <img src="./images/4.png" style="width: 200px">
 
-<img src="./images/5.png" style="width: 500px">
+    - Step2
+    <img src="./images/5.png" style="width: 500px">
 
-<img src="./images/6.png" style="width: 500px">
+    - Step3
+    <img src="./images/6.png" style="width: 500px">
 
-<img src="./images/7.png" style="width: 500px">
+    - Step4
+    <img src="./images/7.png" style="width: 500px">
 
-<img src="./images/8.png" style="width: 500px">
+    - Step5
+    <img src="./images/8.png" style="width: 500px">
 
-<img src="./images/9.png" style="width: 500px">
+    - Step6
+    <img src="./images/9.png" style="width: 500px">
 
 ### 画面の作成
 1. index.htmlに以下のコードを書く。このプロジェクトでは、jQueryとBootStrapを使用する
